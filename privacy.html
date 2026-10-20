@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="favicon.png">
-<title>Privacy Policy – Monevro by Skillro</title>
-<meta name="description" content="How Monevro, developed by Skillro, collects, uses, and protects your information.">
+<title>Jobora – Job Application Tracker | Skillro</title>
+<meta name="description" content="Jobora is a job search app by Skillro that tracks your applications, interviews, and CVs, with optional AI help and clear statistics.">
 <style>
   :root {
     --ink: #1c2b4d;
@@ -19,202 +19,69 @@
   html { scroll-padding-top: 1rem; }
   body {
     margin: 0;
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", Tahoma, Arial, sans-serif;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: var(--ink);
     background: var(--bg);
     line-height: 1.65;
   }
-  .topbar {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 1.25rem 1.5rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-  .brand { display: flex; align-items: center; gap: 0.75rem; font-weight: 700; color: var(--ink); text-decoration: none; }
+  .topbar { max-width: 680px; margin: 0 auto; padding: 1.25rem 1.5rem 0; }
+  .brand { display: inline-flex; align-items: center; gap: 0.75rem; font-weight: 700; color: var(--ink); text-decoration: none; }
   .brand img { width: 44px; height: 44px; border-radius: 12px; }
-  .lang-toggle { display: flex; gap: 4px; background: #f3ebdf; border-radius: 999px; padding: 4px; }
-  .lang-toggle button {
-    border: none; background: transparent; padding: 6px 14px; border-radius: 999px;
-    cursor: pointer; font-weight: 600; font-size: 13px; color: var(--muted); font-family: inherit;
-  }
-  .lang-toggle button.active { background: var(--teal); color: #fff; }
-  .lang-toggle button:focus-visible { outline: 3px solid var(--coral); outline-offset: 2px; }
-  main { max-width: 720px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
-  h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.15; margin: 0 0 0.5rem; letter-spacing: -0.02em; }
-  h2 { font-size: 1.2rem; margin: 2.2rem 0 0.6rem; }
-  p, li { margin: 0 0 0.9rem; color: #2f3b5c; }
-  ul { padding-inline-start: 1.25rem; margin: 0 0 1rem; }
-  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
-  table { width: 100%; border-collapse: collapse; margin: 0.5rem 0 1rem; font-size: 0.95rem; }
-  th, td { border: 1px solid var(--line); padding: 0.55rem 0.75rem; text-align: start; vertical-align: top; }
-  th { background: #f6eee2; }
+  main { max-width: 680px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
+  .crumb { font-size: 0.95rem; color: var(--muted); margin: 0 0 1.5rem; }
+  h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.15; margin: 0 0 1rem; letter-spacing: -0.02em; }
+  h2 { font-size: 1.25rem; margin: 3rem 0 1rem; }
+  p { margin: 0 0 1rem; max-width: 60ch; }
+  .lead { font-size: 1.15rem; color: var(--muted); }
+  .btn:focus-visible, a:focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
+  dl { margin: 0; border-top: 1px solid var(--line); }
+  dt { font-weight: 700; padding-top: 1rem; }
+  dd { margin: 0.2rem 0 0; padding-bottom: 1rem; border-bottom: 1px solid var(--line); color: var(--muted); }
   a { color: var(--teal); }
-  a:focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
-  .lang-block { display: none; }
-  .lang-block.visible { display: block; }
-  footer { max-width: 720px; margin: 0 auto; padding: 0 1.5rem 3rem; font-size: 0.95rem; color: var(--muted); }
-  footer nav a { margin-inline-end: 1rem; }
+  .legal-links a { margin-inline-end: 1.25rem; font-weight: 600; }
+  footer { margin-top: 3rem; font-size: 0.95rem; color: var(--muted); }
 </style>
 </head>
 <body>
-
 <div class="topbar">
   <a class="brand" href="index.html"><img src="skillro-logo.png" alt="Skillro logo" width="44" height="44"><span>Skillro</span></a>
-  <div class="lang-toggle" role="group" aria-label="Language">
-    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
-    <button id="btn-ar" onclick="setLang('ar')">العربية</button>
-  </div>
 </div>
-
 <main>
+  <p class="crumb"><a href="index.html">Skillro</a> / Jobora</p>
+  <h1>Jobora</h1>
+  <p class="lead">A job search app that keeps your applications, interviews, and CVs in one place, so you always know where you stand.</p>
+  <!-- Add the Google Play button here once Jobora is published:
+  <a class="btn" href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_ID">Get it on Google Play</a> -->
 
-  <!-- ENGLISH -->
-  <section id="en" class="lang-block visible" dir="ltr">
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 2026</p>
+  <h2>What you can do with Jobora</h2>
+  <dl>
+    <dt>Track every application</dt>
+    <dd>Record the company, the role, and the status of each application, and add your own notes.</dd>
+    <dt>Never miss an interview</dt>
+    <dd>Keep interview dates in one place and turn on optional reminders.</dd>
+    <dt>Keep your CVs organized</dt>
+    <dd>Store your CVs and cover letters alongside the applications they belong to.</dd>
+    <dt>Get AI-assisted suggestions</dt>
+    <dd>Optional AI features, such as CV suggestions, help you improve how you apply.</dd>
+    <dt>See your statistics</dt>
+    <dd>Clear numbers show how your job search is going, with optional weekly summaries.</dd>
+    <dt>Keep your account secure</dt>
+    <dd>Sign in with email or Google. Your data stays tied to your own account.</dd>
+    <dt>Go further with Jobora Pro</dt>
+    <dd>An optional premium subscription, purchased through Google Play.</dd>
+  </dl>
 
-    <p>This Privacy Policy explains how Skillro ("we", "us") collects, uses, and protects your information when you use the Monevro mobile application ("Monevro", "the App").</p>
+  <h2>Privacy &amp; Terms</h2>
+  <p>Read how Jobora handles your data and the rules for using the app.</p>
+  <p class="legal-links">
+    <a href="jobora-privacy.html">Privacy Policy</a>
+    <a href="jobora-terms.html">Terms of Service</a>
+  </p>
 
-    <h2>1. Information We Collect</h2>
-    <table>
-      <tr><th>Category</th><th>Examples</th></tr>
-      <tr><td>Account information</td><td>Name, email address, and sign-in method (email or Google Sign-In, via Firebase Authentication)</td></tr>
-      <tr><td>Financial data you enter</td><td>Expenses, income, categories, budgets, savings goals, notes, and your preferred currency</td></tr>
-      <tr><td>Receipt images</td><td>Photos of receipts you choose to scan, and the details extracted from them (amount, merchant, category, date)</td></tr>
-      <tr><td>AI-generated content</td><td>Spending plans and suggestions created from your data</td></tr>
-      <tr><td>Usage data</td><td>App interactions, crash logs, device type, and general diagnostics</td></tr>
-    </table>
-    <p>Fingerprint or face unlock is handled entirely by your device. We never receive, collect, or store your biometric data.</p>
-
-    <h2>2. How We Use Your Information</h2>
-    <ul>
-      <li>To provide and operate core features: tracking expenses, budgets, goals, and statistics</li>
-      <li>To scan receipts and generate AI-assisted plans, where the relevant content (such as a receipt image or a summary of your spending) is processed by our AI service provider solely to produce the output you requested</li>
-      <li>To sync your data to your account so it is available if you change devices</li>
-      <li>To send optional notifications you have enabled</li>
-      <li>To improve app stability and performance</li>
-    </ul>
-
-    <h2>3. Third-Party Services</h2>
-    <p>We use the following third-party services, each governed by its own privacy policy:</p>
-    <ul>
-      <li><strong>Firebase</strong> (Google): authentication and data storage</li>
-      <li><strong>Google Sign-In</strong>: optional sign-in method</li>
-      <li><strong>AI service provider</strong>: receipt scanning and spending plans</li>
-    </ul>
-    <p>We do not sell your personal information to third parties, and we do not use your financial data for advertising.</p>
-
-    <h2>4. Data Storage and Security</h2>
-    <p>Your data is stored using industry-standard security practices. While we take reasonable measures to protect your information, no method of transmission or storage is 100% secure.</p>
-
-    <h2>5. Data Retention and Deletion</h2>
-    <p>We keep your data for as long as your account is active. You can delete your account and associated data at any time from the app settings, or by emailing us at the address below.</p>
-
-    <h2>6. Your Rights</h2>
-    <ul>
-      <li>Access and export your data</li>
-      <li>Request correction of inaccurate data</li>
-      <li>Request deletion of your account and data</li>
-      <li>Withdraw consent for optional notifications at any time</li>
-    </ul>
-
-    <h2>7. Children's Privacy</h2>
-    <p>Monevro is not directed at children under 16, and we do not knowingly collect personal information from children.</p>
-
-    <h2>8. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of material changes through the App or on this page.</p>
-
-    <h2>9. Contact Us</h2>
-    <p>For privacy-related questions or requests, contact Skillro at <a href="mailto:skillro.support@gmail.com">skillro.support@gmail.com</a>.</p>
-  </section>
-
-  <!-- ARABIC -->
-  <section id="ar" class="lang-block" dir="rtl">
-    <h1>سياسة الخصوصية</h1>
-    <p class="updated">آخر تحديث: أكتوبر 2026</p>
-
-    <p>توضح سياسة الخصوصية هذه كيف تقوم Skillro ("نحن") بجمع معلوماتك واستخدامها وحمايتها عند استخدامك لتطبيق Monevro ("التطبيق").</p>
-
-    <h2>1. المعلومات التي نجمعها</h2>
-    <table>
-      <tr><th>الفئة</th><th>أمثلة</th></tr>
-      <tr><td>معلومات الحساب</td><td>الاسم، البريد الإلكتروني، وطريقة تسجيل الدخول (البريد أو حساب جوجل عبر Firebase Authentication)</td></tr>
-      <tr><td>البيانات المالية التي تدخلها</td><td>المصروفات، الدخل، الفئات، الميزانيات، أهداف الادخار، الملاحظات، والعملة المفضلة</td></tr>
-      <tr><td>صور الفواتير</td><td>صور الفواتير التي تختار مسحها، والبيانات المستخرجة منها (المبلغ، المتجر، الفئة، التاريخ)</td></tr>
-      <tr><td>المحتوى المولَّد بالذكاء الاصطناعي</td><td>الخطط والاقتراحات المالية المبنية على بياناتك</td></tr>
-      <tr><td>بيانات الاستخدام</td><td>تفاعلات التطبيق، سجلات الأعطال، نوع الجهاز، وبيانات تشخيصية عامة</td></tr>
-    </table>
-    <p>يتم التعامل مع فتح القفل بالبصمة أو الوجه بالكامل على جهازك. نحن لا نستلم بياناتك الحيوية ولا نجمعها ولا نخزنها.</p>
-
-    <h2>2. كيفية استخدامنا لمعلوماتك</h2>
-    <ul>
-      <li>لتوفير وتشغيل المميزات الأساسية: تتبع المصروفات والميزانيات والأهداف والإحصائيات</li>
-      <li>لمسح الفواتير وإنشاء خطط بمساعدة الذكاء الاصطناعي، حيث تتم معالجة المحتوى ذي الصلة (مثل صورة الفاتورة أو ملخص مصروفاتك) بواسطة مزوّد خدمة الذكاء الاصطناعي فقط لإنتاج النتيجة التي طلبتها</li>
-      <li>لمزامنة بياناتك مع حسابك لتظل متاحة عند تغيير الجهاز</li>
-      <li>لإرسال الإشعارات الاختيارية التي قمت بتفعيلها</li>
-      <li>لتحسين استقرار وأداء التطبيق</li>
-    </ul>
-
-    <h2>3. خدمات الطرف الثالث</h2>
-    <p>نستخدم الخدمات التالية من أطراف ثالثة، ولكل منها سياسة الخصوصية الخاصة بها:</p>
-    <ul>
-      <li><strong>Firebase</strong> (جوجل): المصادقة وتخزين البيانات</li>
-      <li><strong>Google Sign-In</strong>: طريقة اختيارية لتسجيل الدخول</li>
-      <li><strong>مزوّد خدمة الذكاء الاصطناعي</strong>: مسح الفواتير وإنشاء الخطط المالية</li>
-    </ul>
-    <p>نحن لا نبيع معلوماتك الشخصية لأي طرف ثالث، ولا نستخدم بياناتك المالية في الإعلانات.</p>
-
-    <h2>4. تخزين البيانات وأمانها</h2>
-    <p>يتم تخزين بياناتك باستخدام ممارسات أمان معيارية في المجال. رغم اتخاذنا إجراءات معقولة لحماية معلوماتك، لا توجد وسيلة نقل أو تخزين آمنة بنسبة 100%.</p>
-
-    <h2>5. الاحتفاظ بالبيانات وحذفها</h2>
-    <p>نحتفظ ببياناتك طالما أن حسابك نشط. يمكنك حذف حسابك والبيانات المرتبطة به في أي وقت من إعدادات التطبيق، أو بمراسلتنا على البريد الموضح أدناه.</p>
-
-    <h2>6. حقوقك</h2>
-    <ul>
-      <li>الوصول إلى بياناتك وتصديرها</li>
-      <li>طلب تصحيح البيانات غير الدقيقة</li>
-      <li>طلب حذف حسابك وبياناتك</li>
-      <li>سحب الموافقة على الإشعارات الاختيارية في أي وقت</li>
-    </ul>
-
-    <h2>7. خصوصية الأطفال</h2>
-    <p>Monevro غير موجّه للأطفال أقل من 16 عامًا، ولا نقوم عن قصد بجمع معلومات شخصية من الأطفال.</p>
-
-    <h2>8. تعديلات على هذه السياسة</h2>
-    <p>قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. سنخطرك بأي تعديلات جوهرية من خلال التطبيق أو في هذه الصفحة.</p>
-
-    <h2>9. تواصل معنا</h2>
-    <p>لأي استفسارات أو طلبات متعلقة بالخصوصية، تواصل مع Skillro على <a href="mailto:skillro.support@gmail.com">skillro.support@gmail.com</a>.</p>
-  </section>
-
+  <footer>
+    <p>Developer: <a href="index.html">Skillro</a><br>
+    Contact: <a href="mailto:skillro.support@gmail.com">skillro.support@gmail.com</a></p>
+  </footer>
 </main>
-
-<footer>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="terms.html" id="terms-link">Terms of Service</a>
-  </nav>
-  <p>© 2026 Skillro. All rights reserved.</p>
-</footer>
-
-<script>
-  function setLang(lang) {
-    document.getElementById('en').classList.toggle('visible', lang === 'en');
-    document.getElementById('ar').classList.toggle('visible', lang === 'ar');
-    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-    document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
-    document.documentElement.lang = lang;
-    document.getElementById('terms-link').href = 'terms.html?lang=' + lang;
-    document.getElementById('terms-link').textContent = lang === 'ar' ? 'الشروط والأحكام' : 'Terms of Service';
-  }
-  // Auto-select language from ?lang=ar query param (used by the Flutter app)
-  var requested = new URLSearchParams(window.location.search).get('lang');
-  if (requested === 'ar' || requested === 'en') setLang(requested);
-</script>
-
 </body>
 </html>
